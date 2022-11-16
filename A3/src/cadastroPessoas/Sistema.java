@@ -1,10 +1,6 @@
 package cadastroPessoas;
 import java.util.Scanner;
 
-/**
- *
- * @author edjan
- */
 public class Sistema {
 
         public static void main(String[] args) {
