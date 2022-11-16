@@ -1,6 +1,6 @@
 package cadastroPessoas;
 import java.util.Scanner;
-
+//comentário de teste para commit
 public class Sistema {
 
         public static void main(String[] args) {
