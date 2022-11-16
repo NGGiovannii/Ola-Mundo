@@ -53,19 +53,19 @@ public class Sistema {
                 System.out.println("Informações do professor:");
                 System.out.println("Nome: " + prof.nome);
                 System.out.println("Matrícula: " + prof.cpf);
-                System.out.println("idade: " + prof.idade);
+                System.out.println("Idade: " + prof.idade);
                 System.out.println("Salário: " + prof.salario);
                 System.out.println("-----------------------");
                 System.out.println("Informações do aluno:");
                 System.out.println("Nome: " + al.nome);
                 System.out.println("Matrícula: " + al.cpf);
-                System.out.println("idade: " + al.idade);
+                System.out.println("Idade: " + al.idade);
                 System.out.println("Plano: " + al.plano);
                 System.out.println("----------------------");
                 System.out.println("Informações do funcionário");
                 System.out.println("Nome: " + fun.nome);
                 System.out.println("Matrícula: " + fun.cpf);
-                System.out.println("idade: " + fun.idade);
+                System.out.println("Idade: " + fun.idade);
                 System.out.println("Salário: " + fun.salario);
                 System.out.println("----------------------");
         }
