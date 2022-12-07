@@ -1,70 +1,60 @@
 package cadastroPessoas;
-import java.util.Scanner;
-
 
 public class Sistema {
+        String pessoa;
+        String plano;
+        String nome;
+        String cpf;
+        String idade;
+        String salario;
 
-        public static void main(String[] args) {
-                Scanner input = new Scanner(System.in);
-                Professor prof = new Professor(null, null, null, 0);
+        public void setPessoa(String pessoa) {
+                this.pessoa = pessoa;
+        }
 
-                System.out.println("-------Bem-vindo-------");
-                System.out.println("Insira os dados que serão pedidos pelo sistema");
-                System.out.println("Digite o nome do professor");
-                prof.nome = input.nextLine();
-                System.out.println("Digite o cpf do professor");
-                prof.cpf = input.nextLine();
-                System.out.println("Digite a idade do professor");
-                prof.idade = input.nextLine();
-                System.out.println("Digite o salário do professor");
-                prof.salario = input.nextFloat();
-                System.out.println("-----------------------");
-                input.nextLine();
+        public String getPessoa() {
+                return pessoa;
+        }
 
-                Aluno al = new Aluno(null, null, null, null);
-                System.out.println("Digite o nome do aluno");
-                al.nome = input.nextLine();
-                System.out.println("Digite o cpf do aluno");
-                al.cpf = input.nextLine();
-                System.out.println("Digite a idade do aluno");
-                al.idade = input.nextLine();
-                System.out.println("Digite o plano do aluno");
-                al.plano = input.nextLine();
-                System.out.println("-----------------------");
+        public void setPlano(String plano) {
+                this.plano = plano;
+        }
 
-                Funcionario fun = new Funcionario(null, null,
-                                null, 0);
-                System.out.println("Digite o nome do funcionário");
-                fun.nome = input.nextLine();
-                System.out.println("Digite o cpf do funcionário");
-                fun.cpf = input.nextLine();
-                System.out.println("Digite a idade do funcionário");
-                fun.idade = input.nextLine();
-                System.out.println("Digite o salário do funcionário");
-                fun.salario = input.nextFloat();
-                System.out.println("-----------------------");
-                input.close();
-                // mostrando os dados
-                System.out.println("-----------------------");
-                System.out.println("As informações digitadas foram as seguintes:");
-                System.out.println("Informações do professor:");
-                System.out.println("Nome: " + prof.nome);
-                System.out.println("Matrícula: " + prof.cpf);
-                System.out.println("Idade: " + prof.idade);
-                System.out.println("Salário: " + prof.salario);
-                System.out.println("-----------------------");
-                System.out.println("Informações do aluno:");
-                System.out.println("Nome: " + al.nome);
-                System.out.println("Matrícula: " + al.cpf);
-                System.out.println("Idade: " + al.idade);
-                System.out.println("Plano: " + al.plano);
-                System.out.println("----------------------");
-                System.out.println("Informações do funcionário");
-                System.out.println("Nome: " + fun.nome);
-                System.out.println("Matrícula: " + fun.cpf);
-                System.out.println("Idade: " + fun.idade);
-                System.out.println("Salário: " + fun.salario);
-                System.out.println("----------------------");
+        public String getPlano() {
+                return plano;
+        }
+
+        public void setNome(String nome) {
+                this.nome = nome;
+        }
+
+        public String getNome() {
+                return nome;
+        }
+
+        public void setCpf(String cpf) {
+                this.cpf = cpf;
+        }
+
+        public String getCpf() {
+                return cpf;
+        }
+
+        public void setIdade(String idade) {
+                this.idade = idade;
+        }
+
+        public String getIdade() {
+                return idade;
+        }
+
+        public void setSalario(String salario) {
+                this.salario = salario;
+        }
+
+        public String getSalario() {
+                return salario;
+
         }
 
 }
